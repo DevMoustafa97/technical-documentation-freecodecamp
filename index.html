@@ -1,50 +1,70 @@
 <!DOCTYPE html>
-<!-- written by moustafa mhmoud 
-    this project made for       FreeCodeCamp.org
-one of five projects for 
-responsive web design certificate 
-
--->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="styles/style.css">
-    
-    <title>Tripute page|Dr.Stephen Covey</title>
+    <link rel="stylesheet" href="/styles/style.css">
+    <title>Survey form | FreeCodeCamp</title>
 </head>
 <body>
-        <main id="main">
-            <div id="img-div">
-                    <p>Meet, </p>
-                    <h1 id="title">Dr.Stephen Covey</h1>
-                <img id="image" src="https://i.ibb.co/10sVtf9/Untitled-1.jpg" alt="Dr.Stephen Covey">
-                <figcaption id="img-caption">-One of the most effective people in the world</figcaption>
-            </div>
-            <br>
-                <p id="tribute-info">
-                <span>Stephen Richards Covey</span> 
-                was an American educator, author, businessman,and keynote speaker.
-                 His most popular book is The 7 Habits of Highly Effective People.
-                  His other books include First Things First, Principle-Centered Leadership,
-                 The 7 Habits of Highly Effective Families, The 8th Habit, and The Leader In Me — How Schools and Parents Around the World Are Inspiring Greatness,
-                  One Child at a Time. In 1996, Time magazine named him one of the 25 most influential people.He was a professor at the Jon M.
-                 Huntsman School of Business at Utah State University at the time of his death.
-                </p>
-                <h2>Author of</h2>
-                <ul>
-                    <li><a href="https://www.amazon.com/Habits-Highly-Effective-People-Anniversary/dp/1511317299">7 Habits of Highly Effective People </a> (1989)</li>
-                    <li><a href="https://www.amazon.com/8th-Habit-Effectiveness-Greatness-Miniature/dp/0762428538">The 8th habit </a>(2004)</li>
-                    <li><a href="https://www.amazon.com/First-Things-Stephen-R-Covey-ebook/dp/B011Q1EXV8">First Things First </a>(1994)</li>
-                    <li><a href="https://www.amazon.com/Living-7-Habits-Courage-Change/dp/B001AQVTDU">Living the 7 Habits: The Courage to Change </a>(2000)</li>
-                </ul>
-                <div id="footer">
+    <header>
+            
+            <h1 id="title">Job application form</h1>
+        </header>
+       
 
-                    <a id="tribute-link" href="https://en.wikipedia.org/wiki/Stephen_Covey" target="_blank">More about Dr.Stephen Covey</a>
-                </div>
+            <p id="description">Fill the blanks to join our team</p>
+        
+    <main>
+        <form id="survey-form">
+            <label for="name" id="name-label">Full name:</label>
+            <input type="text" id="name" placeholder="Ener full name" required>
+        
 
-            <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-        </main>    
+            <label for="email" id="email-label">E-mail:</label>
+            <input type="email" id="email" placeholder="Enter email" required>
+            
+            <label for="number" id="number-label">Number:</label>
+            <input type="number" id="number" min="7" max="14" placeholder="Enter phone number" pattern='[\+]\d{2}[\(]\d{2}[\)]\d{4}[\-]\d{4}' title='Phone Number (Format: +99(99)9999-9999)' required>
+            
+            <p>You are a ...</p>
+
+            <input type="radio" id="male" name="gender" value="male" />
+            <label for="male" >Male</label><br/>
+            <input type="radio" id="female" name="gender" value="female" />
+            <label for="female">Female</label>
+            
+            <p>Select your sutible shift</p>
+            <select name="select" id="dropdown">
+                <option value="day">Day shift (09:00 AM - 05:00 PM)</option>
+                <option value="night">Night shift (05:00 PM - 01:00 AM)</option>
+                <option value="flex">Flextime</option>
+            </select>
+            <p>you prefere to work as :</p>
+           
+            <ul>
+                <li><input type="checkbox" value="front" id="front"> 
+                    <label for="front">Frontend</label></li>
+                <li><input type="checkbox" value="front" id="back"> 
+                    <label for="back">Backend</label></li>
+                <li><input type="checkbox" value="front" id="full"> 
+                    <label for="full">Fullstack</label></li>
+            </ul>
+                
+                
+                
+           
+            
+            <p>More about your skills</p>
+            <textarea name="skills" cols="30" rows="10" placeholder="ie.photoshop, sketch ..."></textarea>
+
+            <button id="submit">Submit</button>
+        </form>
+    </main>
+    <footer>
+        <p>made with love by Moustafa mahmoud</p>
+    </footer>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 </html>
