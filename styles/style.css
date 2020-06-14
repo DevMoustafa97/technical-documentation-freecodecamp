@@ -1,356 +1,228 @@
-/* fonts */
-@import url('https://fonts.googleapis.com/css?family=Montserrat|Montserrat+Alternates|Noto+Sans&display=swap');
-
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 *{
-    font-family: 'Noto Sans', sans-serif;
-
-}
-body{
     padding: 0;
     margin:0;
     box-sizing: border-box;
-    color: #333;
-    font-size: 1.1rem;
-   
+}
+/* colors 
+    #b7d39e
+    #c2d9cc
+
+*/
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: #c2d9cc;
    
 }
-
-
-h1,h3{
-    line-height: 1.3;
-}
-a{
-    color:dodgerblue;
-    text-decoration: none;
+p{
+    padding: 10%;
+    font-weight: 800;
+    color: #26241a;
+    
 }
 ul{
+  padding-left: 15%;
+}
+li{
+    padding: 5%;
+    font-weight: 800;
+    color: #26241a;
+}
+a:hover{
+    background-color: #26241a;
+    color: aliceblue;
+}
+header{
+    font-size: 1.7em;
+    font-weight: bolder;
+    padding-left: 5%;
+}
+code{
+    display: block;
+    background-color: #26241a;
+    color: #c2d9cc;
+    font-family: monospace;
+    width:80%;
+    margin:0 auto;
+    padding:5%;
+    border-radius: 10px;
+    font-size: 1.3em;
+}
+#navbar{
+flex-grow: 1;
+position: fixed;
+width: 20%;
+}
+#main-doc{
+    flex-grow: 4;
+    padding-top: 20vh;
+    padding-left:20% ;
+}
+#navbar > header {
+    display: block;
+    margin:5vh 3vh ;
+    padding: 0px ;
+    /* padding-left: 20%; */
+    text-align: center;
+}
+
+#navbar ul{
     list-style: none;
-}
-img{
-    width:100%;
-
-}
-.container{
-    max-width:95%;
-    margin: auto;
-    overflow: hidden;
-
-}
-#main{
-    background-color: white;
-}
-#nav-bar{
-    position: fixed;
-    display: inline-block;
-    font-size: 1.2rem;
-    width: 100%;
-    background-color: white;
-}
-#nav-bar img{
-    width: 4rem;
-}
-#nav-bar ul{
-    display: inline-block;
-    float: right;    
-    padding:0;
-    margin-right: 8%;
-}
-#nav-bar ul li{
-    display: inline-block;
-    padding: 0 0.5em;
-}
-body > div.container > img {
-    
-    margin-top: 3em;
-}
-body > div.container > h1{
-    margin-top:25vh;
-    font-weight: bold;
-    text-align: center;
-}
-body > div.container > p{
-    text-align: center;
-    font-size: 1.5rem;
-    padding:0 1em;
-
-}
-body > div.container > img{
-    width:50%;
-    float: right;
-}
-#video{
-    width:100%;
-    height:88vh;
-}
-
-#giveaway{
-   text-align: center;
-}
-#giveaway > p{
-    margin-top:5%;
-}
-#giveaway{
-    padding-top: 1%;
-    padding-bottom:1%;
-}
-#submit{
-    border: 1px solid black;
-    border-radius:5px ;
-    background-color: transparent;
-    font-size: bold;
-    line-height: 1.9em;
-
+    padding: 20% auto;
+    background-color: #b7d39e;
+    margin-bottom: 15%;
+    height: 80vh;
+    overflow:scroll;
+    overflow-x: hidden;
+    cursor: pointer;
     
 }
-#email{
-    border: 1px solid black;
-    border-radius:5px ;
-    background-color: transparent;
-    font-size: bold;
-    outline: none;
-    text-align: center;
-    line-height: 1.9em;
-}
-#features{
-    background-color: black;
-    color:white;
-    text-align: center;
-}
-#features p{
-    margin:0 5%;
-}
-#features > div:nth-child(1){
-    background-color: black;
-}
-div div:nth-child(1)  h3{
-    text-align: center;
-     color:white;
-    padding-top:20%;
-    }
-    div div:nth-child(1)  p{
-        color: white;
-        padding:5%;
-        margin: 0;
-    }
-    #features > div:nth-child(2){
-        background-color: black;
-    }
-    #features > div:nth-child(2) > h3{
-        padding-top: 15%;
-    }
-    #features > div:nth-child(3) > h3{
-        padding-top:15%;
-    }
-    #features > div:nth-child(3) > p{
-        padding-bottom: 15%;
-    }
-    #get{
-        
-        text-align: center;
-    }
-    #get h3{
-        font-weight: bold;
-        font-size: 1.7rem;
-        padding-left:5%;
-    }
-    #get p{
-        padding-left:5%;
-        font-size: 1.5rem;
-    }
-    #get > a{
-        display: inline-block;
-       padding: 2%;
-       background-color: dodgerblue;
-       color: white;
-       margin:1em;
-       border-radius: 36px;
-       line-height:0.5em;
-    }
-footer{
-    background-color: black;
-    height: 5vh;
-    text-align: center;
-}
-footer p{
-    padding-top: 5px;
-    color: white;
+::-webkit-scrollbar {
+    width: 10px;
+  }
   
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+ul a{
+    text-decoration: none;
+    font-size: 1.3em;
+    color: #26241a;
+
 }
 
-
-
-
-
-@media only screen and (max-width: 415px) {
+#Reference > ul > li > a{
+    text-decoration: underline;
+    cursor: pointer;
+}
+#Reference > ul > li > a:hover{
+    background-color: #b7d39e;
+}
+#Reference > ul > li:hover{
+    background-color: #c2d9cc;
+    cursor: default;
+}
+@media (max-width:430px){
     *{
-        font-family: 'Noto Sans', sans-serif;
-
-
-    }
-    body{
         padding: 0;
         margin:0;
         box-sizing: border-box;
-        color: #333;
-        font-size: 1.1rem;
-       
-       
     }
+    /* colors 
+        #b7d39e
+        #c2d9cc
     
-    
-    h1,h3{
-        line-height: 1.3;
+    */
+    body{
+        display:unset;
+        font-family: 'Montserrat', sans-serif;
+        background-color: #c2d9cc;
     }
-    a{
-        color:dodgerblue;
-        text-decoration: none;
+    p{
+        padding: 10%;
+        font-weight: 800;
+        color: #26241a;
     }
     ul{
+      padding-left: 15%;
+    }
+    li{
+        padding: 5%;
+        font-weight: 800;
+        color: #26241a;
+    }
+    header{
+        display: block;
+        font-size: 1.7em;
+        font-weight: bolder;
+        padding-left: 5%;
+        width: 100%;
+    }
+    #navbar{
+        display: block;
+       position: relative;
+        width: 100%;
+    }
+    #main-doc{
+        padding-top: 0;
+    }
+    code{
+        display: block;
+        background-color: #26241a;
+        color: #c2d9cc;
+        font-family: monospace;
+        width:80%;
+        margin:0 auto;
+        padding:5%;
+        border-radius: 10px;
+        font-size: 1.3em;
+        margin-bottom: 5%;
+    }
+    #navbar > header {
+        display: block;
+        margin:5vh 3vh ;
+        padding: 0px ;
+        /* padding-left: 20%; */
+        text-align: center;
+    }
+    
+    #navbar ul{
         list-style: none;
+        padding: 20% auto;
+        background-color: #b7d39e;
+        margin-bottom: 15%;
+        height: 40vh;
+        overflow:scroll;
+        overflow-x: hidden;
+        cursor: pointer;
     }
-    img{
-        width:100%;
-    }
-    .container{
-        max-width: 1100px;
-        margin: auto;
-        overflow: hidden;
-    
-    }
-    #main{
-        background-color: white;
-    }
-    #nav-bar{
-        position: fixed;
-        display: inline-block;
-        font-size: 1.2rem;
-        width: 100%;
-        background-color: white;
-    }
-    #nav-bar img{
-        width: 4rem;
-    }
-    #nav-bar ul{
-        display: flex;
-        float: right;
-        justify-content: space-around;
-        padding: 0;
-        
-    }
-    #nav-bar ul li{
-        display: inline-block;
-        padding: 0 0.5em;
-    }
-    body > div.container > img {
-        float:none;
-        width:100%;
-        margin-top: 3em;
-    }
-    body > div.container > h1{
-        margin:0;
-        font-weight: bold;
-        text-align: center;
-    }
-    body > div.container > p{
-        text-align: center;
-        font-size: 1.5rem;
-        padding:0 1em;
+    ::-webkit-scrollbar {
+        width: 10px;
+      }
+      
+      /* Track */
+      ::-webkit-scrollbar-track {
+        background: #f1f1f1; 
+      }
+       
+      /* Handle */
+      ::-webkit-scrollbar-thumb {
+        background: #888; 
+        border-radius: 10px;
+      }
+      
+      /* Handle on hover */
+      ::-webkit-scrollbar-thumb:hover {
+        background: #555; 
+      }
+    ul a{
+        text-decoration: none;
+        font-size: 1.3em;
+        color: #26241a;
     
     }
     
-    #video{
-        width: 100%;
-        height:50vh;
+    #Reference > ul > li > a{
+        text-decoration: underline;
+        cursor: pointer;
     }
-    #giveaway{
-       text-align: center;
+    #Reference > ul > li > a:hover{
+        background-color: #b7d39e;
     }
-    #giveaway{
-        padding-top: 15%;
+    #Reference > ul > li:hover{
+        background-color: #c2d9cc;
+        cursor: default;
     }
-    #submit{
-        border: 1px solid black;
-        border-radius:5px ;
-        background-color: transparent;
-        font-size: bold;
-        line-height: 1.9em;
-    
-        
-    }
-    #email{
-        border: 1px solid black;
-        border-radius:5px ;
-        background-color: transparent;
-        font-size: bold;
-        outline: none;
-        text-align: center;
-        line-height: 1.9em;
-    }
-    #features{
-        background-color: black;
-        color:white;
-        text-align: center;
-    }
-    #features p{
-        margin:0 5%;
-    }
-    #features > div:nth-child(1){
-        background-color: black;
-    }
-    div div:nth-child(1)  h3{
-        text-align: center;
-         color:white;
-        padding-top:20%;
-        }
-        div div:nth-child(1)  p{
-            color: white;
-            padding:5%;
-            margin: 0;
-        }
-        #features > div:nth-child(2){
-            background-color: black;
-        }
-        #features > div:nth-child(2) > h3{
-            padding-top: 15%;
-        }
-        #features > div:nth-child(3) > h3{
-            padding-top:15%;
-        }
-        #features > div:nth-child(3) > p{
-            padding-bottom: 15%;
-        }
-        #get{
-            
-            text-align: center;
-        }
-        #get h3{
-            font-weight: bold;
-            font-size: 1.7rem;
-            padding-left:5%;
-        }
-        #get p{
-            padding-left:5%;
-            font-size: 1.5rem;
-        }
-        #get > a{
-            display: inline-block;
-           padding: 5%;
-           background-color: dodgerblue;
-           color: white;
-           margin:1em;
-           border-radius: 36px;
-           line-height:1em;
-        }
-    footer{
-        background-color: black;
-        height: 5vh;
-        text-align: center;
-    }
-    footer p{
-        margin: 0;
-        color: white;
-        padding-top: 1%;
-    }
-
-
 }
